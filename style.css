@@ -25,7 +25,12 @@
 }
 
 .portfolio-style {
+    /* text-align: center; */
     color: #84bc6f;
+}
+
+.grid {
+    color: white;
 }
 .skillset-style {
     color: white;
