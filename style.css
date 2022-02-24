@@ -1,0 +1,57 @@
+.background {
+    background-color: #2d2d29;
+    z-index: 0;
+}
+
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.title {
+    /* color: #84bc6f; */
+    color: white;
+    line-height: 9px;
+}
+
+.about-style {
+    color: white;
+}
+
+.portfolio-style {
+    color: #84bc6f;
+}
+.skillset-style {
+    color: white;
+}
+.links-style {
+    color: white;
+}
+.contact-style {
+    color: white;
+}
+
+nav a {
+    text-transform: lowercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: #968130;
+    margin-top: .75rem;
+    /* border-top: solid 1px lightgray; */
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    color: #2d2d29;
+    /* text-transform: lowercase; */
+}
