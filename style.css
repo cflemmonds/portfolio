@@ -34,6 +34,10 @@
     color: #84bc6f;
 }
 
+.portfolio-style p {
+    color: black;
+}
+
 .grid {
     color: white;
 }
