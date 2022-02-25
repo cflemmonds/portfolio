@@ -17,7 +17,7 @@
 .title {
     /* color: #84bc6f; */
     color: white;
-    line-height: 9px;
+    line-height: 12px;
 }
 
 .about-style {
@@ -59,4 +59,8 @@ footer {
 footer p {
     color: #2d2d29;
     /* text-transform: lowercase; */
+}
+
+header {
+    padding: 50px;
 }
