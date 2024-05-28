@@ -16,6 +16,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #968130">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">chris flemmonds | designer | developer</a>
+      <!-- When hovering over my name, a hand appears as though it is a clickable link. That is thanks to the "href" attribute. The "#" just links to the top of the page. -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,10 +24,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#about">About</a>
+            <a class="nav-link" aria-current="page" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#work">Work</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#letstalk">Let's Talk</a>
@@ -38,13 +39,14 @@
   </nav>
 
   <br>
+
   <!--Name-->
   <section>
       <div class="jumbotron p-5">
         <div class="title p-3">
           <h1 class="display-5 fw-bold">Chris Flemmonds</h1>
-          <p class="fs-3">junior web developer</p>
-          <p class="fs-3">graphic designer</p>
+          <p class="fs-3">Full Stack Web Developer</p>
+          <p class="fs-3">Graphic Designer</p>
         </div>
       </div>
   </section>
@@ -54,16 +56,41 @@
     <div class="container">
       <div class="row">
         <h1 class="about-style display-1 pt-5 col-4">about</h1>
-        <p class="pt-5 col-8 display-6" style="color: white;">Full Stack Developer with practical experience in front-end and back-end development gained through several individual and team-based coding projects, which involve HTML, CSS, JavaScript, React, PostgreSQL, Express, NodeJS and RESTful APIs.</p>
-      </div>
+        <p class="about-content pt-5 col-8" style="color: white;">Hello! I’m Chris, a dedicated and versatile full-stack web developer with a passion for creating efficient and visually appealing web applications. With expertise in HTML, CSS, JavaScript, TypeScript, PHP, and a wide range of modern frameworks and tools like React, Node.js, and Bootstrap, I bring a holistic approach to web development.</p>
+        <div class="col-4">
+
+        </div>
+          <button type="button" class="about-content btn-light col-4" data-bs-toggle="modal" data-bs-target="#about-modal" id="about-btn">Read More</button>
+        </div>
     </div>
   </section>
 
-  <!--Portfolio-->
+  <!--Work-->
+  <section id="work">
+    <div class="container">
+        <div class="row">
+            <h1 class="work-style display-1 pt-5 col-4" style="color: white;">work</h1>
+            <p class="display-6 col-8" style="color: white">Case Study: Home Inventory Web Application</p>
+            <div class="col-4"></div>
+            <!-- I struggled for an entire 24 hour cycle with this issue; I was trying to add a photo directly under the heading column. I learned that elements are added to the grid from left to right. By adding an empty div with a col attribute equal to the col or row above, the image aligns perfectly (by setting the col attribute equal to one another) -->
+            <img class="col-8" src="./assets/screenshots/firelogger.png" alt="">
+            <div class="col-4"></div>
+            <!-- <p class="display-6 col-8" style="color: white">Overview</p> -->
+            <br>
+            <button type="button" class="work-content btn btn-light display-6 col-4" data-bs-toggle="modal" data-bs-target="#workModal">Read documentation</button>
+                </div>
+            </div>   
+        </div>
+    </div>
+</section>
+
+  <!--
+
+  
   <section id="portfolio">
     <div class="container">
       <div class="row">
-        <h1 class="portfolio-style display-1 col-sm-12 col-lg-4 pt-5"><b>portfolio</b></h1>
+        <h1 class="portfolio-style display-1 col-sm-12 col-lg-4 pt-5"><b>work</b></h1>
         <div class="container pt-5 pb-5 col-lg-8 pb-3">
           <div class="row">
             <div class="grid col-sm-12 col-lg-4 mb-3">
@@ -128,6 +155,7 @@
                   </div>
                 </div>
               </div>
+-->
               <!-- <div class="grid col-sm-12 col-lg-4 mb-3">
                 <div class="col-3">
                   <div class="card">
@@ -139,14 +167,17 @@
                   </div>
                 </div>
               </div> -->
+<!-- 
             </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- <div class="p-5">
+  </section> 
+-->
+
+<!-- <div class="p-5">
             <div class="row">
                 <div class="col-3"><div class="card">
                   <img src="./assets/meteorSoftball1.png" class="card-img-top">
@@ -265,9 +296,433 @@
     </div>
   </section>
 
+<!-- About Modal -->
+<div class="modal fade" id="about-modal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h1 class="modal-title fs-5" id="#about-modal">Professional Journey</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+              <div class="modal-body">
+                  <p><strong>Full Stack Website Developer Volunteer | Hack for LA</strong>
+                      <br>
+                      <br>
+                      Since May 2024, I have been contributing to Hack for LA, a civic tech initiative where I collaborate with cross-functional teams to deliver high-quality software solutions. My role involves aligning product requirements with development best practices, conducting code reviews, and crafting intuitive user interfaces alongside the Design team.</p>
+                      <strong>Excel VBA Software Developer | Miller Consulting Group & Allison Transmission, Inc.</strong>
+              <br>
+              <br>
+              At Miller Consulting Group, I implemented Excel automation scripts that significantly reduced manual effort and improved reporting processes. My contract role at Allison Transmission saw me enhance navigation systems and optimize VBA code, leading to substantial efficiency gains and user satisfaction. I also led training sessions to uplift team productivity and code quality.
+              <br>
+              <br>
+              <strong>Coding Dojo Participant | Atlas Program</strong>
+              <br>
+              <br>
+              My participation in the Atlas Program honed my coding skills through intensive exercises, coding challenges, and peer reviews. I embraced Test-Driven Development (TDD) practices and developed a growth mindset, adaptable to new coding paradigms.
+              <br>
+              <br>
+              <strong>Technical Projects</strong>
+              <br>
+              <br>
+              One of my notable projects is a Home Inventory Web Application, where I utilized HTML, CSS, JavaScript, React, Node.js, and PostgreSQL to create a robust and user-friendly platform. I implemented secure authentication mechanisms, designed multiple API endpoints, and ensured a seamless user experience through responsive design and accessibility principles. The application is deployed on Heroku, showcasing my ability to deliver production-ready solutions.
+              <br>
+              <br>
+              <strong>Professional Goals</strong>
+              <br>
+              <br>
+              I am driven by the desire to leverage cutting-edge technologies to solve real-world problems and create impactful digital experiences. My goal is to continuously grow and refine my skills, contributing to projects that make a difference.
+              <br>
+              <br>
+              <strong>Personal Touch</strong>
+              <br>
+              <br>
+              Beyond coding, I enjoy exploring the latest tech trends, contributing to open-source projects, and hiking in the mountains. These interests keep me inspired and bring a well-rounded perspective to my work.</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Work Modal -->
+<div class="modal fade" id="workModal" tabindex="-1" aria-labelledby="workModalLabel" aria-hidden="true" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="workModalLabel">Case Study Documentation</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!--<span aria-hidden="true">&times;</span> -->  
+      </div>
+        <div class="modal-body">
+          <!-- Nav Tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#tab1" role="tab">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab2" role="tab">Objectives</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab3" role="tab">Technologies Used</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab4" role="tab">My Contributions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab5" role="tab">Challenges and Solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab6" role="tab">Features and Functionality</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab7" role="tab">Impact and Results</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab8" role="tab">Learning and Growing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab9" role="tab">Code Repository</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#tab10" role="tab">Project Timeline</a>
+            </li>
+          </ul>
+          <!--Tab Panes-->
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1" role="tabpanel">
+              <!--Content for Tab 1-->
+              <strong>Project Name:</strong>
+                <p>Home Inventory Management System v1.0</p>
+                 <strong>Purpose: </strong>
+                 <p>The purpose of this project is to help users maintain a detailed inventory of their possessions, including prices and images of receipts. This system is particularly useful in the event of a fire or other disaster, as it provides proof of ownership for insurance purposes, thereby simplifying the claims process and ensuring that users can recover their losses more efficiently.</p>
+                <strong>Goal:</strong>
+                <p>To provide a secure and organized platform where users can store information about their belongings.</p>
+            </div>
+            <div class="tab-pane" id="tab2" role="tabpanel">
+              <strong>Objective 1: </strong>
+                 <p>Develop a secure authentication and authorization system using JSON Web Tokens (JWT) for user signup and login functionality.
+                </p>
+                <strong>Objective 2:</strong>
+                <p>Implement a table structure for possessions with categorized data fields (category, name, year, serial number, photo URL, dollar value) to meet Minimum Viable Product (MVP) requirements.
+                </p>
+                <strong>Objective 3:</strong>
+                <p>Design an intuitive and straightforward user interface for adding, editing, and managing inventory items.
+                </p>
+                <strong>Objective 4:</strong>
+                <p>Ensure reliability and performance by creating a stable application that performs basic tasks without critical errors or crashes.
+                </p>
+                <strong>Objective 5:</strong>
+                <p>Adhere to a cost-effective approach, considering budget constraints and avoiding excessive investment in non-essential features.
+                </p>
+                <strong>Objective 6:</strong>
+                <p>Demonstrate the viability of the product as a proof of concept, showcasing its potential to solve the problem of managing home inventories effectively.
+                </p>
+            </div>
+            <div class="tab-pane" id="tab3" role="tabpanel">
+              <strong>Frontend: </strong>
+                 <p>React.js, custom styling (CSS)
+                </p>
+                <strong>Backend:</strong>
+                <p>Node.js, Express.js
+                </p>
+                <strong>Database:</strong>
+                <p>PostgreSQL
+                </p>
+                <strong>Version Control:</strong>
+                <p>Git, GitHub
+                </p>
+                <strong>Deployment:</strong>
+                <p> Heroku
+                </p>
+            </div>
+            <div class="tab-pane" id="tab4" role="tabpanel">
+              <strong>Contribution 1: </strong>
+                 <p>Built the server with user registration and authentication, including JWT for session management and encryption of sensitive information.
+                </p>
+                <strong>Contribution 2:</strong>
+                <p>Developed the site infrastructure, created the React app boilerplate, and connected the frontend to the backend.
+                </p>
+                <strong>Contribution 3:</strong>
+                <p>Deployed both the client and server to Heroku, ensuring the application was accessible and functioning correctly in a production environment.
+                </p>
+            </div>
+            <div class="tab-pane" id="tab5" role="tabpanel">
+              <strong>Challenge 1: </strong>
+                <strong>Tight Deadline</strong> <p>Our team faced the challenge of completing the entire web application within just five days, which required effective time management and prioritization of tasks.
+                </p>
+                <ul>
+                  <li>
+                    Solution 1: We conducted a detailed project planning session at the outset, breaking down tasks into manageable segments and assigning priorities to ensure critical functionalities were developed first.
+                  </li>
+                  <li>
+                    Solution 2: Daily stand-up meetings were held to track progress, identify bottlenecks early, and make necessary adjustments to meet the deadline.
+                  </li>
+                  <li>
+                    Solution 3: Leveraging existing libraries, frameworks, and tools helped speed up development and reduce time spent on reinventing the wheel.
+                  </li>
+                </ul>
+                <strong>Challenge 2: Unforeseen Team Member Absence</strong>
+                <p>One team member faced unexpected circumstances that required them to be absent for the first two days of the project, leading to a temporary gap in contribution and task allocation.
+                </p>
+                <ul>
+                  <li>
+                    Solution 1: Responsibilities were redistributed among team members to maximize efficiency and ensure all project aspects were addressed effectively.
+                  </li>
+                  <li>
+                    Solution 2: Regular updates and discussions were held to keep everyone informed and aligned with project goals and timelines.
+                  </li>
+                  <li>
+                    Solution 3: Flexibility and adaptability within the team allowed us to address the temporary setback without compromising the overall progress of the project. I also took on a leadership role by proactively stepping in to cover additional tasks during the absence of a team member, while also providing support to another team member who required assistance with certain tasks. This approach fostered a collaborative and supportive environment within the team, ensuring that everyone felt empowered to contribute effectively.
+                  </li>
+                </ul>
+            </div>
+            <div class="tab-pane" id="tab6" role="tabpanel">
+              <strong>User Authentication and Authorization: </strong>
+                <ul>
+                  <li>
+                    Feature: Secure signup and login functionality using email and password.
+                  </li>
+                  <li>
+                    Functionality: Allows users to create an account and securely access their inventory data using JWT for session management.
+                  </li>
+                </ul>
+                <strong>Inventory Management:</strong>
+                <ul>
+                  <li>
+                    Feature: Table for possessions with detailed data fields.
+                  </li>
+                  <li>
+                    Functionality: Users can add, edit, and manage their inventory items, with fields for:
+                  </li>
+                    <ul>
+                      <li>
+                        Category of property (e.g., electronics, jewelry, furs, art, antiques)
+                      </li>
+                      <li>
+                        Name of the item
+                      </li>
+                      <li>
+                        Year of acquisition
+                      </li>
+                      <li>
+                        Serial Number
+                      </li>
+                      <li>
+                        Photo URL
+                      </li>
+                      <li>
+                        Dollar value
+                      </li>
+                    </ul>
+                </ul>
+                <strong>Intuitive User Interface:</strong>
+                <ul>
+                  <li>
+                    Feature: User-friendly interface for inventory management.
+                  </li>
+                  <li>
+                    Functionality: Provides an easy-to-navigate UI for adding, editing, and viewing inventory items, ensuring a smooth user experience.
+                  </li>
+                </ul>
+                <strong>Reliability and Performance:</strong>
+                <ul>
+                  <li>
+                    Feature: Stable and efficient application performance.
+                  </li>
+                  <li>
+                    Functionality: Ensures the application performs basic tasks without critical errors or crashes, providing a reliable user experience.
+                  </li>
+                </ul>
+                <strong>Cost-Effective Solution:</strong>
+                <ul>
+                  <li>
+                    Feature: Budget-friendly deployment and resource management.
+                  </li>
+                  <li>
+                    Functionality: The application is designed to be cost-effective, avoiding excessive investment in non-essential features, and using Heroku for deployment within budget constraints.
+                  </li>
+                </ul>
+                <strong>Proof of Concept:</strong>
+                <ul>
+                  <li>
+                    Feature: Demonstrates viability and problem-solving potential.
+                  </li>
+                  <li>
+                    Functionality: Showcases the application's ability to solve the problem of managing home inventories, providing proof of concept to stakeholders.
+                  </li>
+                </ul>
+            </div>
+            <div class="tab-pane" id="tab7" role="tabpanel">
+              <strong>Achievement of Project Goals: </strong>
+                <ul>
+                  <li>
+                    Impact: Successfully met all the objectives outlined for the project within the given timeframe.
+                  </li>
+                  <li>
+                    Result: The application was fully functional and met the Minimum Viable Product (MVP) requirements, including user authentication, inventory management, and a user-friendly interface.
+                  </li>
+                </ul>
+                <strong>Learning and Skill Development:</strong>
+                <ul>
+                  <li>
+                    Impact: Enhanced understanding and practical experience with full-stack web development.
+                  </li>
+                  <li>
+                    Result: Team members gained valuable skills in technologies such as React.js, Node.js, Express.js, and PostgreSQL, as well as experience in deploying applications on Heroku.
+                  </li>
+                </ul>
+                <strong>Peer and Instructor Feedback:</strong>
+                <ul>
+                  <li>
+                    Impact: Received positive feedback from classmates and the instructor during the project presentation.
+                  </li>
+                  <li>
+                    Result: The project's organization, functionality, and design were well-received, with specific praise for the intuitive user interface and robust authentication system.
+                  </li>
+                </ul>
+                <strong>Team Collaboration and Problem-Solving:</strong>
+                <ul>
+                  <li>
+                    Impact: Strengthened teamwork and problem-solving abilities.
+                  </li>
+                  <li>
+                    Result: Overcame challenges such as tight deadlines and unforeseen absences by effectively redistributing tasks and maintaining open communication, demonstrating strong collaboration and leadership within the team.
+                  </li>
+                </ul>
+
+                </ul>
+            </div>
+            <div class="tab-pane" id="tab8" role="tabpanel">
+              <strong>Technical Skills Enhancement: </strong>
+                <ul>
+                  <li>
+                    Learning: Gained hands-on experience with full-stack web development, specifically using React.js for the frontend and Node.js with Express.js for the backend.
+                  </li>
+                  <li>
+                    Growth: Improved proficiency in building RESTful APIs, implementing JWT for authentication, and managing PostgreSQL databases.
+                  </li>
+                </ul>
+                <strong>Project Management and Collaboration:</strong>
+                <ul>
+                  <li>
+                    Learning: Learned how to effectively plan and manage a project within a tight deadline, including task delegation and time management.
+                  </li>
+                  <li>
+                    Growth: Enhanced ability to work collaboratively in a team, leveraging each member's strengths and providing support where needed, fostering a cooperative and productive working environment.
+                  </li>
+                </ul>
+                <strong>Problem-Solving and Adaptability:</strong>
+                <ul>
+                  <li>
+                    Learning: Developed problem-solving skills by addressing technical challenges and unforeseen issues.
+                  </li>
+                  <li>
+                    Growth: Improved adaptability and resilience by adjusting plans and responsibilities to ensure project continuity and success.
+                  </li>
+                </ul>
+                <strong>Deployment and Production:</strong>
+                <ul>
+                  <li>
+                    Learning: Gained experience in deploying applications to Heroku, including configuring environments for both frontend and backend.
+                  </li>
+                  <li>
+                    Growth: Developed a deeper understanding of deployment processes and the importance of maintaining a cost-effective approach.
+                  </li>
+                </ul>
+                <strong>User-Centered Design:</strong>
+                <ul>
+                  <li>
+                    Learning: Focused on creating an intuitive and user-friendly interface based on user feedback and usability principles.
+                  </li>
+                  <li>
+                    Growth: Enhanced skills in UI/UX design, ensuring that the application is accessible and easy to use for the target audience.
+                  </li>
+                </ul>
+                <strong>Security Best Practices:</strong>
+                <ul>
+                  <li>
+                    Learning: Implemented secure coding practices, including encryption of sensitive information and robust authentication mechanisms.
+                  </li>
+                  <li>
+                    Growth: Strengthened knowledge of web application security, ensuring that user data is protected and the application is secure against common vulnerabilities.
+                  </li>
+                </ul>
+            </div>
+            <div class="tab-pane" id="tab9" role="tabpanel">
+              <strong>GitHub Repository: </strong>
+                <ul>
+                  <li>
+                    Frontend: <a href="https://github.com/cflemmonds/pernclient">https://github.com/cflemmonds/pernclient</a>
+                  </li>
+                  <li>
+                    Backend: <a href="https://github.com/cflemmonds/pernserver">https://github.com/cflemmonds/pernserver</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="tab-pane" id="tab10" role="tabpanel">
+              <strong>Start Date: </strong>
+                <ul>
+                  <li>
+                    March 1, 2022
+                  </li>
+                </ul>
+                <strong>End Date:</strong>
+                <ul>
+                  <li>
+                    March 5, 2022
+                  </li>
+                </ul>
+                <strong>Milestone 1: Initial Planning and Setup (Day 1)</strong>
+                <ul>
+                  <li>
+                    Tasks: Project planning session, task delegation, initial setup of repositories, and environment configuration for frontend and backend.
+                  </li>
+                  <li>
+                    Outcome: Detailed project plan, clear roles and responsibilities, and initial project structure in place.
+                  </li>
+                </ul>
+                <strong>Milestone 2: Backend Development (Days 2-3)
+                </strong>
+                <ul>
+                  <li>
+                    Tasks: Development of the server with user registration and authentication, setup of PostgreSQL database, creation of API endpoints, and implementation of CRUD operations for inventory items.
+                  </li>
+                  <li>
+                    Outcome: Functional backend with secure user authentication, fully operational CRUD functionality, and API endpoints ready for integration.
+                  </li>
+                </ul>
+                <strong>Milestone 3: Frontend Development (Days 3-4)</strong>
+                <ul>  
+                  <li>
+                    Tasks: Development of the user interface using React.js, form validation for user signup/login, integration with backend API endpoints, and styling of all views.
+                  </li>
+                  <li>
+                    Outcome: User-friendly and intuitive frontend, successfully integrated with the backend, providing a seamless user experience.
+                  </li>
+                </ul>
+                <strong>Milestone 4: Testing and Deployment (Day 5)</strong>
+                <ul>
+                  <li>
+                    Tasks: Thorough testing of the application, bug fixing, deployment of both frontend and backend to Heroku, and final project presentation preparation.
+                  </li>
+                  <li>
+                    Outcome: Stable and deployed application, tested and free of critical errors, ready for demonstration and use.
+                  </li>
+                </ul>
+            </div>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- Footer -->
   <footer>
-    <p> &#169 2023 Chris Flemmonds</p>
+    <p> &#169 2024 Chris Flemmonds</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
